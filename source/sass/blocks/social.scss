@@ -1,0 +1,67 @@
+.social {
+  min-width: 114px;
+}
+
+.social__list {
+  margin: 0;
+  margin-top: 11px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20px);
+  gap: 27px;
+  justify-content: end;
+
+  @include vp-1023 {
+    margin-top: 2px;
+    grid-template-columns: repeat(auto-fit, 16px);
+    gap: 23px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    justify-content: start;
+  }
+}
+
+.social__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  min-width: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+
+  @include vp-1023 {
+    min-height: 16px;
+    min-width: 16px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social__link--ok {
+  background-image: url("../img/svg/icon-social-ok.svg");
+}
+
+.social__link--dzen {
+  background-image: url("../img/svg/icon-social-dzen.svg");
+}
+
+.social__link--reddit {
+  background-image: url("../img/svg/icon-social-reddit.svg");
+}

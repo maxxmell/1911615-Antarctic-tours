@@ -1,0 +1,8 @@
+.main-container {
+  min-height: 100%;
+
+  @include vp-767 {
+    min-width: 320px;
+  }
+}
+

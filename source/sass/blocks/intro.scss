@@ -1,0 +1,59 @@
+.intro__wrapper {
+  padding-top: calc(210px - 35px);
+
+  @include vp-1023 {
+    padding-top: calc(230px - 30px);
+  }
+
+  @include vp-767 {
+    padding-top: calc(143px - 20px);
+  }
+}
+
+.intro h1,
+.intro__header {
+  margin: 0;
+  margin-left: 95px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $alice-blue;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    margin-left: 0;
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.intro p,
+.intro__description {
+  margin: 0;
+  margin-left: 95px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    width: 200px;
+  }
+}

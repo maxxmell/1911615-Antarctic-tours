@@ -2,17 +2,14 @@
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  color: $tangaroa;
 
-  background-color: $color-neon-blue;
+  background-color: $alice-blue;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;

@@ -1,0 +1,112 @@
+.main-header {
+  color: $alice-blue;
+  background-color: $tangaroa;
+  background-image: url("../img/background/background-intro-desktop.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include retina {
+    background-image: url("../img/background/background-intro-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background/background-intro-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/background/background-intro-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    background-image: url("../img/background/background-intro-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/background/background-intro-mobile@2x.jpg");
+    }
+  }
+}
+
+.main-header__menu-wrapper {
+  box-sizing: border-box;
+  min-height: calc(35px * 2 + 38px);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: minmax(70px, 15%) 1fr;
+  gap: 20px;
+
+  @include vp-1023 {
+    min-height: calc(30px * 2 + 20px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(20px * 2 + 22px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-header__logo-link {
+  display: flex;
+}
+
+.main-header__button {
+  display: none;
+  margin: auto 0;
+  margin-left: auto;
+  padding: 0;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/svg/icon-burger.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+
+  // &--no-script {
+  //   display: none;
+  // }
+}
+
+.main-header__navigation {
+  justify-self: end;
+
+  @include vp-767 {
+    grid-column: span 2;
+  }
+}
+
+.main-header__intro {
+  min-height: calc(650px - (35px * 2 + 38px));
+
+  @include vp-1023 {
+    min-height: calc(638px - (30px * 2 + 20px));
+  }
+
+  @include vp-767 {
+    min-height: calc(500px - (20px * 2 + 22px));
+  }
+}
+

@@ -1,0 +1,27 @@
+.main-footer {
+  min-height: 138px;
+  min-width: 320px;
+  background-color: $tangaroa;
+}
+
+.main-footer__container {
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-template-columns: 70px 1fr minmax(114px, max-content);
+  gap: 40px;
+
+  @include vp-767 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.main-footer__logo-link {
+  display: flex;
+}
+
+.main-footer__navigation {
+  justify-self: flex-start;
+}
