@@ -9,7 +9,7 @@ package-lock.json
 node_modules/
 build/
 npm-debug.*
-source/img/*.webp
+source/img/**/*.webp
 source/css/*.css
 source/css/*.map
 Thumbs.db
