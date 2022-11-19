@@ -1,4 +1,4 @@
-.travel-container {
+.travel__container {
   padding-top: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,7 +57,7 @@
   }
 }
 
-.travel__foto-wrapper img {
+.travel__photo-wrapper img {
   margin-left: 20px;
   object-fit: cover;
   width: 560px;

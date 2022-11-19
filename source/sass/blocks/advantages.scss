@@ -1,0 +1,119 @@
+.advantages {
+  position: relative;
+  color: $tangaroa;
+  background-color: $solitude;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url("../img/background/background-advantages-desktop.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/background/background-advantages-desktop@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/background/background-advantages-tablet.jpg");
+
+      @include retina {
+        background-image: url("../img/background/background-advantages-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      min-width: 320px;
+      background-image: url("../img/background/background-advantages-mobile.jpg");
+
+      @include retina {
+        background-image: url("../img/background/background-advantages-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.advantages__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages h2,
+.advantages__header {
+  margin: 0;
+  padding-bottom: 60px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $tangaroa;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__item h3,
+.advantages__advantage-header {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: $tangaroa;
+}
+
+.advantages__item p,
+.advantages__advantage-description {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $tangaroa;
+}
+
+.advantages__item p + .advantages__item p,
+.advantages__advantage-description + .advantages__advantage-description {
+  padding-top: 20px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  background-color: $alice-blue;
+  padding: 30px 30px 50px;
+}
