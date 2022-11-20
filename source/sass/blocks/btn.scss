@@ -1,7 +1,12 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: flex;
+  padding: 14px 46px 15px 47px;
 
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
   color: $tangaroa;
 
   background-color: $alice-blue;

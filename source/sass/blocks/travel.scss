@@ -1,3 +1,8 @@
+.travel {
+  background-color: $alice-blue;
+  color: $tangaroa;
+}
+
 .travel__container {
   padding-top: 120px;
   display: grid;
@@ -12,7 +17,7 @@
   }
 }
 
-.travel h1,
+.travel h2,
 .travel__header {
   margin: 0;
   padding-bottom: 40px;
