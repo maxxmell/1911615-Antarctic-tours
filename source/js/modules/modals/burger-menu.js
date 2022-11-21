@@ -1,7 +1,11 @@
 function renderBurgerMenu(options) {
   let navContainer = document.querySelector(`.${options.container}`);
   let navToggleButton = document.querySelector(`.${options.button}`);
-  let links = navContainer.querySelectorAll('a');
+  let links = [];
+
+  if (navContainer) {
+    links = navContainer.querySelectorAll('a');
+  }
 
   function openMenu() {
     navContainer.classList.remove(`${options.container}--closed`);
@@ -31,7 +35,7 @@ function renderBurgerMenu(options) {
     }
   }
 
-  if (navContainer) {
+  if (navContainer && navToggleButton) {
     navContainer.classList.remove(`${options.container}--no-script`);
 
     navToggleButton.addEventListener('click', toggleMenu);
