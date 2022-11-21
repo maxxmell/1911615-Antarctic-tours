@@ -1,0 +1,128 @@
+.callback-form form {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: $tangaroa;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  color: $alice-blue;
+
+  @include vp-767 {
+    padding: 40px 38px;
+  }
+}
+
+.callback-form h3,
+.callback-form__header {
+  margin: 0;
+  padding-bottom: 15px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.callback-form input {
+  box-sizing: border-box;
+  padding: 11px 16px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $tangaroa;
+  width: 100%;
+
+  background-color: $alice-blue;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    color: rgba(1, 28, 64, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.callback-form input[type="text"] + label,
+.callback-form input[type="tel"] + label,
+.callback-form input[type="email"] + label {
+  @extend.visually-hidden;
+}
+
+.callback-form button[type="submit"] {
+  display: flex;
+  width: 100%;
+  min-height: 43px;
+  margin-top: 10px;
+  padding: 15px 15px 17px 16px;
+  font-size: 16px;
+  line-height: 19px;
+  justify-content: center;
+}
+
+.callback-form input[type="checkbox"] {
+  @extend.visually-hidden;
+  bottom: 123px;
+  left: 50px;
+}
+
+.callback-form input[type="checkbox"] + label {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: $alice-blue;
+  user-select: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.callback-form input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid transparent;
+  margin-right: 5px;
+  background-color: $alice-blue;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.callback-form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/svg/icon-tick.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.callback-form input[type="checkbox"]:not(:disabled) + label:hover::before {
+  opacity: 0.7;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.callback-form input[type="checkbox"]:focus + label::before {
+  opacity: 0.7;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.callback-form input[type="checkbox"]:disabled + label,
+.callback-form input[type="checkbox"]:disabled + label::before {
+  opacity: 0.3;
+}
