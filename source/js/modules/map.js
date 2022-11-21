@@ -5,24 +5,22 @@ export function renderLazyMap() {
     passive: true,
     capture: true,
   };
-  mapContainer.addEventListener('click', startLazyMap, mapConfiguration);
-  mapContainer.addEventListener('mouseover', startLazyMap, mapConfiguration);
-  mapContainer.addEventListener('touchstart', startLazyMap, mapConfiguration);
-  mapContainer.addEventListener('touchmove', startLazyMap, mapConfiguration);
+
+  if (mapContainer) {
+    mapContainer.addEventListener('click', startLazyMap, mapConfiguration);
+    mapContainer.addEventListener('mouseover', startLazyMap, mapConfiguration);
+    mapContainer.addEventListener('touchstart', startLazyMap, mapConfiguration);
+    mapContainer.addEventListener('touchmove', startLazyMap, mapConfiguration);
+  }
 
   let mapLoaded = false;
   function startLazyMap() {
     if (!mapLoaded) {
-      let mapBlock = document.getElementById('map-loader');
       mapLoaded = true;
-      mapBlock.setAttribute('src', mapBlock.getAttribute('data-src'));
-      mapBlock.removeAttribute('data-src');
+      ymaps.ready(init);
     }
   }
 }
-
-// map
-ymaps.ready(init);
 
 function init() {
   let myMap = new ymaps.Map('map', {
