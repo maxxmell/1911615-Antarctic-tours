@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {renderLazyMap} from './modules/map';
+import renderBurgerMenu from './modules/modals/burger-menu';
 
 // ---------------------------------
 
@@ -19,6 +20,10 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     renderLazyMap();
+    renderBurgerMenu({
+      container: 'burger-menu',
+      button: 'burger-menu__button',
+    });
   });
 });
 

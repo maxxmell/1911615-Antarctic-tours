@@ -10,7 +10,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: $alice-blue;
   list-style: none;
 
   @include vp-1023 {
@@ -27,7 +26,7 @@
   align-items: center;
   margin: 0;
   text-decoration: none;
-  color: $alice-blue;
+  color: inherit;
   min-height: 38px;
   font-size: 16px;
   line-height: 20px;
