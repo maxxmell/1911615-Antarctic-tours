@@ -1,5 +1,6 @@
 .intro__wrapper {
   padding-top: calc(210px - 35px);
+  padding-bottom: 40px;
 
   @include vp-1023 {
     padding-top: calc(230px - 30px);
