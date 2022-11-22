@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Круизы в Антарктику">
+    <title>Круизы в Антарктику </title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/montserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="icon.webmanifest">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <div class="main-header__container container">
+          <div class="main-header__menu-wrapper burger-menu burger-menu--no-script burger-menu--closed">
+            <a class="main-header__logo-link">
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+              <span class="visually-hidden">Логотип Круизы в Антарктику</span>
+            </a>
+            <button class="main-header__button burger-menu__button" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <nav class="main-header__navigation main-navigation">
+              <ul class="main-navigation__list burger-menu__list">
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#advantages-inner-link" data-scroll-to="advantages">
+                    Преимущества
+                  </a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#">
+                    Направления
+                  </a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#catalog-inner-link" data-scroll-to="catalog">
+                    Ближайшие круизы
+                  </a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#contacts-inner-link" data-scroll-to="contacts">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <section class="main-header__intro intro">
+            <div class="intro__wrapper">
+              <h1 class="intro__header">Круизы в&nbsp;Антарктику</h1>
+              <p class="intro__description">Волшебный мир айсбергов и пингвинов</p>
+            </div>
+          </section>
+        </div>
+      </header>
+      <main class="main-container">
+        <section class="main-container__travel travel">
+          <div class="travel__container container">
+            <div class="travel__text-wrapper">
+              <h2 class="travel__header">Путешествие на&nbsp;край Земли</h2>
+              <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <div class="travel__photo-wrapper">
+              <picture>
+                <source srcset="../img/content/penguins@2x.webp" type="image/webp">
+                <img src="../img/content/penguins@2x.jpg" width="560" height="301"  alt="Три пингвина в Антарктике">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="main-container__advantages advantages">
+          <a id="advantages-inner-link"></a>
+          <div class="advantages__container container">
+            <h2 class="advantages__header">Преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item  advantages__item--ship">
+                <svg width="27" height="32">
+                  <use xlink:href="img/sprite.svg#icon-ship"></use>
+                </svg>
+                <h3 class="advantages__advantage-header">Небольшой круизный лайнер</h3>
+                <p class="advantages__advantage-description">Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+              <li class="advantages__item advantages__item--all-in">
+                <svg width="38" height="32">
+                  <use xlink:href="img/sprite.svg#icon-all-in"></use>
+                </svg>
+                <h3 class="advantages__advantage-header">Система все&nbsp;включено</h3>
+                <p class="advantages__advantage-description">Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+              <li class="advantages__item advantages__item--zodiak">
+                <svg width="44" height="32">
+                  <use xlink:href="img/sprite.svg#icon-zodiak"></use>
+                </svg>
+                <h3 class="advantages__advantage-header">Экскурсионные туры на Zodiac</h3>
+                <p class="advantages__advantage-description">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiack c&nbsp;опытными экскурсоводами.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-container__catalog catalog">
+          <a id="catalog-inner-link"></a>
+          <div class="catalog__container container">
+            <h2 class="catalog__header">Ближайшие круизы</h2>
+            <ul class="catalog__list">
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-astoria@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-astoria@2x.jpg" width="260" height="386"  alt="Виды тура Астория">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Астория”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Астория”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Аргентина - Фолклендские острова - Антарктида</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Ушуайя</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">11 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 11500 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-aline@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-aline@2x.jpg" width="260" height="386"  alt="Виды тура Элайн">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Элайн”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Элайн”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Буэнос-Айрес</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">20 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 14500 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-atlantis@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-atlantis@2x.jpg" width="260" height="386"  alt="Виды тура Атлантис">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Атлантис”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Атлантис”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Ушуайя</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">15 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 14500 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-odissey@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-odissey@2x.jpg" width="260" height="386"  alt="Виды тура Одиссей">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Одиссей”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Одиссей”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Чили - Антарктида</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Пунта-Аренас</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">13 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 9700 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-olimpia@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-olimpia@2x.jpg" width="260" height="386"  alt="Виды тура Олимпия">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Олимпия”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Олимпия”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Ушуайя</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">21 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 18600 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-aurora@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-aurora@2x.jpg" width="260" height="386"  alt="Виды тура Аврора">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Аврора”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Аврора”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Аргентина - Антарктида - Чили</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Ушуайя</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">14 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 11700 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-leonor@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-leonor@2x.jpg" width="260" height="386"  alt="Виды тура Леонор">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Леонор”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Леонор”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Пунта-Аренас</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">17 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 12500 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item product-card">
+                <div class="product-card__photo-wrapper">
+                  <picture>
+                    <source srcset="../img/content/tours/tour-minion@2x.webp" type="image/webp">
+                    <img src="../img/content/tours/tour-minion@2x.jpg" width="260" height="386"  alt="Виды тура Минион - 1">
+                  </picture>
+                  <p class="product-card__photo-label">Круиз “Минион - 1”</p>
+                </div>
+                <div class="product-card__tour-info">
+                  <h3 class="product-card__tour-header">Круиз “Минион - 1”</h3>
+                  <dl class="product-card__tour-property">
+                    <dt class="product-card__tour-property-term">Маршрут</dt>
+                    <dd class="product-card__tour-property-details">Аргентина - Антарктида</dd>
+                    <dt class="product-card__tour-property-term">Порт отправления</dt>
+                    <dd class="product-card__tour-property-details">Ушуайя</dd>
+                    <dt class="product-card__tour-property-term">Продолжительность</dt>
+                    <dd class="product-card__tour-property-details">11 дней</dd>
+                    <dt class="product-card__tour-property-term">Цена</dt>
+                    <dd class="product-card__tour-property-details">от 12300 $</dd>
+                  </dl>
+                  <a class="product-card__tour-button btn" href="#">Забронировать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-container__booking booking">
+          <div class="booking__container container">
+            <div class="booking__text-wrapper">
+              <h2 class="booking__header">Раннее бронирование</h2>
+              <p class="booking__description">Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="booking__form callback-form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <h3 class="callback-form__header">Оставьте заявку и&nbsp;мы&nbsp;вяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+                <input id="booking-name" type="text" name="name"
+                pattern="^[а-яА-ЯёЁa-zA-Z-'. ]+$"
+                minlength="1"
+                placeholder="Имя" required title="Русские буквы или Латиница">
+                <label for="booking-name">Имя</label>
+                <input id="booking-tel" type="tel" name="phone"
+                  pattern="^[0-9\-+()]+$"
+                  minlength="1"
+                  placeholder="Телефон" required>
+                <label for="booking-tel">Телефон</label>
+                <input id="booking-email" type="email" name="email"
+                placeholder="Email" required>
+                <label for="booking-email">Email</label>
+                <input id="booking-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
+                <label for="booking-personal-data">Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</label>
+                <button class="btn" type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="main-container__contacts contacts">
+          <a id="contacts-inner-link"></a>
+          <div class="contacts__container container">
+            <div class="contacts__map map-container" id="map-container">
+              <div class="map-container__ymap" id="map"></div>
+            </div>
+            <div class="contacts__text-wrapper">
+              <h2 class="contacts__main-header">Контакты</h2>
+              <h3 class="contacts__header">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--adress">
+                  <a href="https://yandex.ru/maps/-/CCUR4YDYkA" class="contacts__link">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</a>
+                </li>
+                <li class="contacts__item contacts__item--phone">
+                  <a href="tel:+78002000000" class="contacts__link">8-800-200-00-00</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__container container">
+          <a class="main-footer__logo-link">
+            <svg width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Круизы в Антарктику</span>
+          </a>
+          <nav class="main-footer__navigation footer-navigation">
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#advantages-inner-link" data-scroll-to="advantages">
+                  Преимущества
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">
+                  Направления
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#catalog-inner-link" data-scroll-to="catalog">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#contacts-inner-link" data-scroll-to="contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--dzen" href="https://dzen.ru/html_academy">
+                  <span class="visually-hidden">Дзен.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--reddit" href="https://www.reddit.com/htmlacademy">
+                  <span class="visually-hidden">Reddit.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  </body>
+</html>
