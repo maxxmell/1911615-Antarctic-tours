@@ -40,14 +40,14 @@
 }
 
 .advantages__container {
-  padding-top: 120px;
+  padding-top: 109px;
   padding-bottom: 120px;
 }
 
 .advantages h2,
 .advantages__header {
   margin: 0;
-  padding-bottom: 60px;
+  padding-bottom: 49px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -71,7 +71,8 @@
 .advantages__item h3,
 .advantages__advantage-header {
   margin: 0;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 9px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -93,7 +94,7 @@
 
 .advantages__item p + .advantages__item p,
 .advantages__advantage-description + .advantages__advantage-description {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .advantages__list {
@@ -115,5 +116,5 @@
 
 .advantages__item {
   background-color: $alice-blue;
-  padding: 30px 30px 50px;
+  padding: 30px 30px 45px;
 }

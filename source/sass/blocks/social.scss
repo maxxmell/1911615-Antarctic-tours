@@ -9,7 +9,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20px);
-  gap: 27px;
+  gap: 26px;
   justify-content: end;
 
   @include vp-1023 {

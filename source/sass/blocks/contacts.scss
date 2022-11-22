@@ -41,6 +41,12 @@
   }
 }
 
+.contacts__text-wrapper {
+  align-self: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 .contacts h2,
 .contacts__main-header {
   @extend.visually-hidden;
@@ -49,7 +55,7 @@
 .contacts h3,
 .contacts__header {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -67,7 +73,7 @@
 .contacts__item {
   position: relative;
   padding-left: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   min-height: 18px;
 
   &::before {

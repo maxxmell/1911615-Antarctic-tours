@@ -8,8 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 145px;
-  column-gap: 88px;
-  row-gap: 40px;
+  gap: 40px;
 
   @include vp-767 {
     display: flex;
@@ -17,10 +16,15 @@
   }
 }
 
+.travel__text-wrapper {
+  padding-top: 55px;
+  padding-right: 25px;
+}
+
 .travel h2,
 .travel__header {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -63,13 +67,11 @@
 }
 
 .travel__photo-wrapper img {
-  margin-left: 20px;
   object-fit: cover;
   width: 560px;
   height: 301px;
 
   @include vp-1023 {
-    margin-left: 0;
     width: 324px;
     height: 174px;
   }

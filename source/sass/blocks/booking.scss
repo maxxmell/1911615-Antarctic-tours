@@ -29,7 +29,7 @@
 }
 
 .booking__container {
-  padding-top: 50px;
+  padding-top: 49px;
   padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,15 +49,16 @@
 }
 
 .booking__text-wrapper {
-  margin-left: 17px;
-  margin-right: 16px;
+  margin-right: 7px;
+  margin-top: 13px;
   align-self: center;
+  justify-self: flex-end;
 }
 
 .booking__text-wrapper h2,
 .booking__header {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 8px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -103,6 +104,8 @@
 
 .booking__form {
   width: 403px;
+  margin-left: 37px;
+  justify-self: center;
 
   @include vp-1023 {
     margin: 0 auto;
