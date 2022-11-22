@@ -30,7 +30,6 @@
     }
 
     @include vp-767 {
-      min-width: 320px;
       background-image: url("../img/background/background-advantages-mobile.jpg");
 
       @include retina {

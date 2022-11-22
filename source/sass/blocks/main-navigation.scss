@@ -18,6 +18,8 @@
 
   @include vp-767 {
     gap: 10px;
+    justify-content: flex-start;
+    padding-left: 10px;
   }
 }
 

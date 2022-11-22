@@ -1,7 +1,5 @@
 .booking {
   min-height: 455px;
-  min-width: 320px;
-
   width: 100%;
   height: 100%;
   background-image: url("../img/background/background-booking-desktop.jpg");
@@ -22,7 +20,6 @@
   }
 
   @include vp-767 {
-    min-width: 320px;
     background-image: url("../img/background/background-booking-mobile.jpg");
 
     @include retina {
@@ -34,7 +31,6 @@
 .booking__container {
   padding-top: 50px;
   padding-bottom: 50px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
