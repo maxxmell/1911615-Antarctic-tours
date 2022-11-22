@@ -12,7 +12,7 @@
   color: $alice-blue;
 
   @include vp-767 {
-    padding: 40px 38px;
+    padding: 35px 30px 40px;
   }
 }
 
@@ -21,9 +21,14 @@
   margin: 0;
   padding-bottom: 7px;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-767 {
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .callback-form input {
@@ -72,6 +77,10 @@
   font-size: 14px;
   line-height: 21px;
   justify-content: center;
+
+  @include vp-767 {
+    margin-top: 7px;
+  }
 }
 
 .callback-form input[type="checkbox"] {
@@ -91,6 +100,10 @@
   user-select: none;
   cursor: pointer;
   align-self: flex-start;
+
+  @include vp-767 {
+    line-height: 12px;
+  }
 }
 
 .callback-form input[type="checkbox"] + label::before {
@@ -105,6 +118,12 @@
   background-color: $alice-blue;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 }
 
 .callback-form input[type="checkbox"]:checked + label::before {

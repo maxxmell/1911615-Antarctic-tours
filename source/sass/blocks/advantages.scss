@@ -2,9 +2,11 @@
   position: relative;
   color: $tangaroa;
   background-color: $solitude;
+  z-index: -1;
 
   &::before {
     content: "";
+    z-index: -1;
     display: block;
     position: absolute;
     left: 0;
@@ -48,6 +50,10 @@
     padding-bottom: 100px;
   }
 
+  @include vp-767 {
+    padding-top: 57px;
+    padding-bottom: 64px;
+  }
 }
 
 .advantages h2,
@@ -68,7 +74,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -85,6 +91,10 @@
   font-size: 18px;
   line-height: 25px;
   color: $tangaroa;
+
+  @include vp-767 {
+    width: 170px;
+  }
 }
 
 .advantages__item p,

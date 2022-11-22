@@ -51,6 +51,10 @@
   @include vp-1023 {
     padding: 29px 35px 15px;
   }
+
+  @include vp-767 {
+    padding: 29px 25px 15px;
+  }
 }
 
 .product-card h3,
@@ -129,5 +133,10 @@
   @include vp-1023 {
     bottom: 27px;
     left: 35px;
+  }
+
+  @include vp-767 {
+    bottom: 17px;
+    left: 25px;
   }
 }

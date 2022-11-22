@@ -43,7 +43,7 @@
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 59px;
     padding-bottom: 65px;
   }
 }
@@ -59,6 +59,10 @@
     margin-top: 0;
     justify-self: center;
     padding-bottom: 32px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 14px;
   }
 }
 
@@ -83,6 +87,7 @@
   @include vp-767 {
     font-size: 24px;
     line-height: 31px;
+    padding-bottom: 14px;
   }
 }
 
@@ -107,6 +112,7 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
+    width: 257px;
   }
 }
 
