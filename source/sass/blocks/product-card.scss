@@ -4,7 +4,9 @@
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   position: relative;
 
-  &:hover .product-card__photo-wrapper {
+  &:hover .product-card__photo-wrapper,
+  &:active .product-card__photo-wrapper,
+  &:focus-within .product-card__photo-wrapper {
     z-index: -1;
   }
 }
