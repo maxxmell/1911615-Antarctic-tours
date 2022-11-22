@@ -45,6 +45,12 @@
   align-self: center;
   margin-left: 20px;
   margin-top: 20px;
+
+  @include vp-1023 {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 66px;
+  }
 }
 
 .contacts h2,
@@ -62,6 +68,10 @@
   font-size: 18px;
   line-height: 27px;
   color: $tangaroa;
+
+  @include vp-1023 {
+    padding-bottom: 27px;
+  }
 }
 
 .contacts__list {
@@ -97,6 +107,16 @@
     &::before {
       height: 18px;
       background-image: url("../img/svg/icon-phone.svg");
+    }
+  }
+
+  @include vp-1023 {
+    padding-right: 35px;
+
+    &--adress {
+      &::before {
+        top: 4px;
+      }
     }
   }
 }

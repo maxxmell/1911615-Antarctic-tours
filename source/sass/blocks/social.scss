@@ -15,7 +15,7 @@
   @include vp-1023 {
     margin-top: 2px;
     grid-template-columns: repeat(auto-fit, 16px);
-    gap: 23px;
+    gap: 21px;
   }
 
   @include vp-767 {

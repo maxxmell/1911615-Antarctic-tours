@@ -42,6 +42,12 @@
 .advantages__container {
   padding-top: 109px;
   padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
 }
 
 .advantages h2,
@@ -116,5 +122,26 @@
 
 .advantages__item {
   background-color: $alice-blue;
-  padding: 30px 30px 45px;
+  padding: 26px 16px 19px 20px;
+}
+
+.advantages__item--ship svg {
+  @include vp-1023 {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.advantages__item--all-in svg {
+  @include vp-1023 {
+    width: 27px;
+    height: 26px;
+  }
+}
+
+.advantages__item--zodiak svg {
+  @include vp-1023 {
+    width: 36px;
+    height: 26px;
+  }
 }

@@ -10,6 +10,12 @@
   padding-bottom: 145px;
   gap: 40px;
 
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 63px;
+    gap: 20px;
+  }
+
   @include vp-767 {
     display: flex;
     flex-direction: column;
@@ -19,6 +25,17 @@
 .travel__text-wrapper {
   padding-top: 55px;
   padding-right: 25px;
+
+  @include vp-1023 {
+    padding-top: 0;
+    padding-right: 9px;
+  }
+}
+
+.travel__photo-wrapper {
+  @include vp-1023 {
+    padding-top: 10px;
+  }
 }
 
 .travel h2,
@@ -33,7 +50,8 @@
   color: $tangaroa;
 
   @include vp-1023 {
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+    padding-right: 18px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -57,8 +75,6 @@
 
   @include vp-1023 {
     margin-left: 0;
-    font-size: 18px;
-    line-height: 22px;
   }
 
   @include vp-767 {
