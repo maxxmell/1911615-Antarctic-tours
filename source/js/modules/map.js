@@ -17,19 +17,19 @@ export function renderLazyMap() {
   function startLazyMap() {
     if (!mapLoaded) {
       mapLoaded = true;
-      ymaps.ready(init);
+      window.ymaps.ready(init);
     }
   }
 }
 
 function init() {
-  let myMap = new ymaps.Map('map', {
+  let myMap = new window.ymaps.Map('map', {
     center: [59.938635, 30.323118],
     zoom: 15.5,
     controls: [],
   });
 
-  let myPlacemark1 = new ymaps.Placemark([59.937589, 30.322788], {
+  let myPlacemark1 = new window.ymaps.Placemark([59.937589, 30.322788], {
     balloonContent: '"Круизы в Антарктику"',
   }, {
     iconLayout: 'default#image',

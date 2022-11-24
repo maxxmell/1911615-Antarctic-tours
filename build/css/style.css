@@ -645,7 +645,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding-left: 103px;
   padding-right: 103px;
@@ -680,118 +680,6 @@ button,
 
 .btn.focus-visible:focus {
   opacity: 0.8;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .main-header {
@@ -1007,19 +895,6 @@ button,
   position: relative;
   color: #011c40;
   background-color: #e3ecf6;
-  z-index: -1;
-}
-
-.advantages::before {
-  content: "";
-  z-index: -1;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
   background-image: url("../img/background/background-advantages-desktop.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -1086,7 +961,10 @@ button,
 
 .advantages__item {
   background-color: #f9fbfd;
-  padding: 26px 16px 19px 20px;
+  background-position: top 30px left 30px;
+  background-size: auto 32px;
+  background-repeat: no-repeat;
+  padding: 69px 30px 45px;
 }
 
 .catalog {
@@ -1251,6 +1129,7 @@ button,
   min-height: 455px;
   width: 100%;
   height: 100%;
+  background-color: #b0d7fa;
   background-image: url("../img/background/background-booking-desktop.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -1560,7 +1439,7 @@ button,
   background-size: cover;
 }
 
-.footer-navigation__list {
+.footer-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,7 +1635,7 @@ button,
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1365px) {
   .container {
     padding-left: calc(50vw - 580px);
     padding-right: calc(50vw - 580px);
@@ -1858,7 +1737,7 @@ button,
     height: 174px;
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/background/background-advantages-tablet.jpg");
   }
 
@@ -1875,6 +1754,12 @@ button,
 
   .advantages__list {
     gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 58px 16px 20px 20px;
+    background-position: top 26px left 20px;
+    background-size: auto 26px;
   }
 
   .advantages__item--ship svg {
@@ -1998,7 +1883,7 @@ button,
     background-image: url("../img/background/background-map-tablet.jpg");
   }
 
-  .footer-navigation__list {
+  .footer-navigation {
     gap: 23px;
   }
 
@@ -2043,7 +1928,7 @@ button,
     background-image: url("../img/background/background-intro-tablet@2x.jpg");
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/background/background-advantages-tablet@2x.jpg");
   }
 
@@ -2060,19 +1945,6 @@ button,
   .container {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
   }
 
   .main-header {
@@ -2227,7 +2099,7 @@ button,
     height: 156px;
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/background/background-advantages-mobile.jpg");
   }
 
@@ -2251,6 +2123,10 @@ button,
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .advantages__item {
+    background-position: top 25px left 20px;
   }
 
   .catalog__container {
@@ -2371,7 +2247,7 @@ button,
     background-image: url("../img/background/background-map-mobile.jpg");
   }
 
-  .footer-navigation__list {
+  .footer-navigation {
     gap: 12px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -2422,7 +2298,7 @@ button,
     background-image: url("../img/background/background-intro-mobile@2x.jpg");
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/background/background-advantages-mobile@2x.jpg");
   }
 
@@ -2456,7 +2332,7 @@ button,
     background-image: url("../img/background/background-intro-desktop@2x.jpg");
   }
 
-  .advantages::before {
+  .advantages {
     background-image: url("../img/background/background-advantages-desktop@2x.jpg");
   }
 

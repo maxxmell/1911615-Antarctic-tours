@@ -1,12 +1,12 @@
 .container {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding-left: 103px;
   padding-right: 103px;
 
-  @include vp-1919 {
+  @include vp-1365 {
     padding-left: calc(50vw - 580px);
     padding-right: calc(50vw - 580px);
   }
