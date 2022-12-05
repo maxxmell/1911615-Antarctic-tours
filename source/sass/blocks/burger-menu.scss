@@ -1,3 +1,6 @@
+.burger-menu__overlay {
+  display: none;
+}
 
 .burger-menu--no-script {
   @include vp-767 {
@@ -8,26 +11,30 @@
 
 .burger-menu--opened {
   @include vp-767 {
-    background-color: rgba(0, 43, 102, 0.5);
-    padding-top: 0;
-    color: $alice-blue;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-.burger-menu--opened .burger-menu__container {
-  @include vp-767 {
     background-color: $alice-blue;
     color: $tangaroa;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
     margin-left: 35px;
     padding: 20px 15px;
     align-items: start;
     align-content: start;
     row-gap: 33px;
-    height: 100vh;
   }
+}
+
+.burger-menu--opened .burger-menu__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(-1 * (clamp(320px, 100vw, 100vw) - 100%));
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: calc(clamp(320px, 100vw, 100vw) - 100%);
+  background-color: rgba(0, 43, 102, 0.5);
 }
 
 .burger-menu--no-script a {

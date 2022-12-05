@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     renderBurgerMenu({
       container: 'burger-menu',
       button: 'burger-menu__button',
+      overlay: 'burger-menu__overlay',
     });
   });
 });

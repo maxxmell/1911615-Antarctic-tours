@@ -4,6 +4,7 @@ import {FocusLock} from '../../utils/focus-lock';
 function renderBurgerMenu(options) {
   let navContainer = document.querySelector(`.${options.container}`);
   let navToggleButton = document.querySelector(`.${options.button}`);
+  let navOverlay = document.querySelector(`.${options.overlay}`);
   let links = [];
   navContainer._scrollLock = new ScrollLock();
   navContainer._focusLock = new FocusLock();
@@ -22,6 +23,10 @@ function renderBurgerMenu(options) {
         links[i].addEventListener('click', closeMenu);
       }
     }
+
+    if (navOverlay) {
+      navOverlay.addEventListener('click', closeMenu);
+    }
   }
 
   function closeMenu() {
@@ -34,6 +39,10 @@ function renderBurgerMenu(options) {
       for (let i = 0; i < links.length; i++) {
         links[i].removeEventListener('click', closeMenu);
       }
+    }
+
+    if (navOverlay) {
+      navOverlay.removeEventListener('click', closeMenu);
     }
   }
 

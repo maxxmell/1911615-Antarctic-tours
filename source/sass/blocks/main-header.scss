@@ -38,6 +38,10 @@
   min-height: calc(35px * 2 + 38px);
   padding-top: 35px;
   padding-bottom: 35px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: minmax(70px, 15%) 1fr;
+  gap: 20px;
 
   @include vp-1023 {
     min-height: calc(30px * 2 + 20px);
@@ -46,20 +50,10 @@
   }
 
   @include vp-767 {
+    grid-template-columns: 1fr 1fr;
     min-height: calc(20px * 2 + 22px);
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-}
-
-.main-header__menu-container {
-  display: grid;
-  align-items: flex-start;
-  grid-template-columns: minmax(70px, 15%) 1fr;
-  gap: 20px;
-
-  @include vp-767 {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
