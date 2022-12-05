@@ -3,6 +3,16 @@
   color: $quartz;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   position: relative;
+  width: 100%;
+  aspect-ratio: 260/386;
+
+  @include vp-1023 {
+    aspect-ratio: 309/386;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 270/386;
+  }
 
   &:hover .product-card__photo-wrapper,
   &:active .product-card__photo-wrapper,
@@ -47,7 +57,9 @@
   box-sizing: border-box;
   min-width: 260px;
   min-height: 386px;
+  height: 100%;
   padding: 28px 25px 15px;
+  overflow-y: auto;
 
   @include vp-1023 {
     padding: 29px 35px 15px;
