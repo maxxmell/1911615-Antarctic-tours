@@ -703,6 +703,9 @@ button,
   min-height: 108px;
   padding-top: 35px;
   padding-bottom: 35px;
+}
+
+.main-header__menu-container {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: start;
@@ -892,7 +895,6 @@ button,
 }
 
 .advantages {
-  position: relative;
   color: #011c40;
   background-color: #e3ecf6;
   background-image: url("../img/background/background-advantages-desktop.jpg");
@@ -1194,7 +1196,6 @@ button,
 }
 
 .callback-form form {
-  position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -1961,11 +1962,14 @@ button,
   }
 
   .main-header__menu-wrapper {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
     min-height: 62px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .main-header__menu-container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .main-header__logo-link svg {
@@ -2008,12 +2012,17 @@ button,
   }
 
   .burger-menu--opened {
-    background-color: #f9fbfd;
-    color: #011c40;
+    background-color: rgba(0, 43, 102, 0.5);
+    padding-top: 0;
+    color: #f9fbfd;
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+  }
+
+  .burger-menu--opened .burger-menu__container {
+    background-color: #f9fbfd;
+    color: #011c40;
     margin-left: 35px;
     padding: 20px 15px;
     -webkit-box-align: start;
@@ -2022,6 +2031,7 @@ button,
     -ms-flex-line-pack: start;
     align-content: start;
     row-gap: 33px;
+    height: 100vh;
   }
 
   .burger-menu--no-script a {
